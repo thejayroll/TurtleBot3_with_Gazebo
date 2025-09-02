@@ -1,0 +1,40 @@
+Robot not spawning? Ensure TURTLEBOT3_MODEL=burger is set
+
+Commands not found? Run source ~/ros2_ws/install/setup.bash
+
+Gazebo crashes? Check available memory with free -h
+
+Controls
+i - Forward
+
+, - Backward
+
+j - Turn Left
+
+l - Turn Right
+
+k - Stop
+
+text
+
+## 🚀 GitHub Upload Commands
+
+```bash
+# Initialize repository
+mkdir turtlebot3_simulation
+cd turtlebot3_simulation
+
+# Create all files
+touch setup_install.sh launch_simulation.sh start_teleop.sh README.md .gitignore
+
+# Add content to each file (copy from above)
+
+# Initialize git and upload
+git init
+git add .
+git commit -m "Initial commit: TurtleBot3 simulation package"
+git branch -M main
+
+# Create repo on GitHub first, then:
+git remote add origin https://github.com/yourusername/turtlebot3_simulation.git
+git push -u origin main

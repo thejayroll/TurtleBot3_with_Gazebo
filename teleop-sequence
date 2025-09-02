@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "🎮 Starting Keyboard Teleoperation"
+echo "================================"
+
+# Source environment
+source ~/ros2_ws/install/setup.bash
+export TURTLEBOT3_MODEL=burger
+
+# Start teleop
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
